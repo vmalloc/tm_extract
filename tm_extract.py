@@ -66,10 +66,9 @@ def _extract_single(physical_path, virtual_path, args):
      
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-n", "--dry-run", action="store_true", default=False, dest="dry_run")
 parser.add_argument("root")
 parser.add_argument("dest")
 
-if __name__ == "__main__":
+if __name__ == "__main__": 
     args = parser.parse_args()
     extract(args)
